@@ -5,9 +5,6 @@ const passport = require("passport");
 const { hashSync } = require("bcryptjs");
 const { ensureAuthenticated } = require("../middleware/protect");
 
-router.get("/", (req, res) => {
-  res.render("profile.ejs");
-});
 router.get("/register", (req, res) => {
   res.render("register");
 });
@@ -47,7 +44,7 @@ router.post(
 );
 
 router.get("/", ensureAuthenticated, (req, res) => {
-  res.send("welcome to the profile page user ");
+  res.render("profile.ejs");
 });
 
 router.get("/logout", (req, res, next) => {
