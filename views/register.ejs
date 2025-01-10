@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet/register.css"> <!-- Custom Styles -->
+</head>
+<style>
+    /* Reset some basic styling */
+body, html {
+    height: 100%;
+}
+
+/* Center the card vertically */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Customize button and link colors */
+.btn-danger {
+    background-color: #f30d19;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #df0812;
+}
+
+.btn-primary {
+    background-color: rgb(9, 128, 240);
+    color: white;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: rgb(8, 110, 206);
+}
+
+.btn-light {
+    background-color: #ccc;
+}
+
+.btn-light:hover {
+    background-color: #a0a0a0;
+}
+
+/* Customize footer text */
+footer p {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Make the log-in link bold */
+footer a {
+    font-weight: 700;
+}
+
+</style>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card shadow-lg p-4" style="max-width: 480px; width: 100%;">
+            <div class="text-center">
+                <h2 class="mt-4">Welcome to task 1 </h2>
+                <p class="text-muted">Find new ideas to try</p>
+            </div>
+           
+            <!-- Sign Up Form -->
+            <form action="/register" method="POST">
+                <div class="mb-3">
+                    <input type="text" name="username" class="form-control" id="fullName" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Create a Password" required>
+                </div>
+                <button type="submit" class="btn btn-danger w-100 mb-3">Sign up</button>
+
+            </form>
+
+            <footer class="text-center mt-4">
+                <p class="text-muted">By continuing, you agree to our <b>Terms of Service</b> and <b>Privacy Policy</b>.</p>
+                <hr>
+                <p>Already a member? <a href="/login" class="text-decoration-none">Log in</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
