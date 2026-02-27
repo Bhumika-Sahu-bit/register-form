@@ -4,7 +4,7 @@ A simple and clean **User Registration & Login web app** built using **Node.js, 
 This project allows users to sign up and log in using a form interface — ideal for learning backend auth workflows and form handling.
 
 🔗 **Live Preview:**  
-👉 https://register-task1.onrender.com/ :contentReference[oaicite:0]{index=0}
+👉 https://register-task1.onrender.com/ 
 
 ---
 
